@@ -2,12 +2,13 @@ package Observer;
 
 public class Test {
     public static void main(String[] args) {
-        Timer timer = new Timer();
+        Timer t = new Timer();
         Toto toto1 = new Toto("Observateur 1");
         Toto toto2 = new Toto("Observateur 2");
-        timer.addObserver(toto1);
-        timer.addObserver(toto2);
-        timer.setX(13);
+        System.out.println("la valeur initial est "+t.getX());
+        t.ajouter(toto1);
+        t.ajouter(toto2);
+        t.setX(1);
 
     }
 }
